@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Table</title>
+
+    <style>
+        td,th{
+            border: 1px solid black;
+            height: 10px;
+        }
+        table
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar Table 1 </h1>
+
+    <!--
+         Pembelajaran tentang table
+         
+         tr > table row
+         th > table header
+    -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Kota</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dimas</td>
+                <td>Jakarta</td>
+                <td>JL.BudiMulia</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>budi</td>
+                <td>bandung</td>
+                <td>JL.merdeka dalam</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Marni</td>
+                <td>Medan</td>
+                <td>Jl.Horas</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Kota</th>
+                <th>Alamat</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+
+    <h1>Belajar Table 2</h1>
+    <table>
+        <tr>
+            <td rowspan="2">No</td>
+            <td colspan="2">Jenis Kemalin</td>
+            <td rowspan="2">Nama</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>P</td>
+        </tr>
+        <!-- Jawaban -->
+        <tr>
+            <td>1</td>
+            <td colspan="2">L</td>
+            <!-- <td></td> -->
+            <td>Hacktiv8</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td>P</td>
+            <td>Lisa</td>
+        </tr>
+    </table>
+</body>
+</html>

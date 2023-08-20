@@ -1,0 +1,19 @@
+body
+{
+    background-color: beige;
+    padding: 15px;
+    margin:  1px;
+}
+h1{
+    border-radius: 20px;
+    border: 1px solid white;
+    text-align:  center;
+}
+.hello{
+    color: red!important;
+    font-size: 20px;
+}
+#hello_css{
+    text-decoration: dotted;
+    font-family: 'Courier new', Courier, monospace;
+}

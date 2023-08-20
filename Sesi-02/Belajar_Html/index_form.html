@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar form</title>
+    <style>
+        input[type=text], select, textarea
+        {
+            width: 100%;
+            /*  */
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+        button{
+            width: 80%;
+            background-color: aqua;
+            color: white;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius:  4px;
+            cursor: pointer;
+        }
+        div.form-group
+        {
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 1px;
+            background-color: rgba(27, 212, 236, 0.863);
+            padding: 1px;
+           
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar Form</h1>
+    <!-- membuat form -->
+    
+    <form action="">
+        <div class="form-group">
+                <label for ="nama"> Nama Lengkap</label>
+                <input type="text" placeholder="Masukan Nama Lengkap Anda" required>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <textarea name="alamat" id="alamat" cols="25" rows="3" placeholder="Masukan alamat anda"
+            required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="Jenis Kelamin">Jenis Kelamin</label>
+            <select name="jenis Kelamin"  id="jenis_kelamin" required>
+                <option value="">--Pilih Data--</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+        </div>
+
+        <button> Kirim Form Biodata </button>
+    </form>
+    
+</body>
+</html>
