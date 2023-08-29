@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Event`</title>
+</head>
+<body>
+    <h1> Hitung Maju MUndur :</h1>
+
+    <button id="Maju" onclick="tombolMaju()">Maju</button>
+    <button id="Mundur" onclick="tombolMundur()">Mundur</button>
+
+    <!-- buat rumus segitiga -->
+
+
+    <p id="nilai">0</p>
+    <br>
+    <!-- <button id="tombol" onclick="UbahText()">PUNCET</button> -->
+
+    <script>
+        var nilai = 0;
+        // function UbahText()
+        // {
+        //     document.getElementById("tombol").innerHTML = "BAAAAAA!!!";
+        // }
+
+        function updateNilai() {
+         document.getElementById("nilai").textContent = nilai;
+         }
+
+        function tombolMaju()
+        {
+            nilai++;
+            updateNilai();
+        }
+        function tombolMundur ()
+        {
+            nilai--;
+            updateNilai();
+        }  
+        document.getElementById("tombolMaju").addEventListener("click", Maju);
+        document.getElementById("tombolMundur").addEventListener("click", Mundur);
+        
+
+    </script>
+</body>
+</html>

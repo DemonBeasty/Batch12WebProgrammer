@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-text h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile-text h2 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.action button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#detail table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#detail table, #detail td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#detail td:first-child {
+    font-weight: bold;
+}
+
+form {
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

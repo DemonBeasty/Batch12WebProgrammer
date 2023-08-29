@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Pengkondisian</title>
+</head>
+<body>
+    <label>Kondisi</label> <input id="kondisi" type="text"><br><br>
+    <button onclick="CekLapar()"> Cek Lapar</button>
+    <p id="hasil"></p>
+
+    <script>
+        function CekLapar()
+        {
+            let kondisi = document.getElementById("kondisi").value;
+            let hasil = "";
+
+            if (kondisi === "Lapar")
+            {
+                //waktu Makan
+                hasil = "Waktu Makan"
+            }
+            else
+            {
+                hasil = "Bukan Waktu makan"
+            }
+            document.getElementById("hasil").innerHTML = hasil;
+            // else
+            // {
+            //     hasil.innerHTML = "Saya Tidak Lapar";
+            // }
+        }
+    </script>
+</body>
+</html>

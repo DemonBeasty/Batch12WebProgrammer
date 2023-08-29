@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algoritma Menghitung Luas dan Keliling</title>
+    <style>
+      body {
+        background-color: blueviolet;
+      }
+
+      #hasil,
+      #hasilluas {
+        background-color: #fff;
+        border: 2px solid #07f5e9;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Jawaban Nomor 1  -->
+    <h1>Algoritma Menghitung Luas dan Keliling</h1>
+
+    <input
+      type="number"
+      placeholder="Masukkan Nilai Jari-Jari Lingkaran (cm)"
+      id="jari"
+    />
+    <button onclick="hitungKeliling()">Hitung Keliling Lingkaran</button>
+
+    Hasil Keliling: <span id="hasil"></span>
+    <br />
+    <br />
+
+    <input
+      type="number"
+      placeholder="Masukan Nilai Jari-Jari Lingkaran (cm)"
+      id="luas"
+    />
+    <button onclick="hitungLuas()">Hitung Luas lingkaran</button>
+
+    Hasil Luas: <span id="hasilluas"></span>
+
+    <script>
+      // Jawaban Nomor 2
+      var phi = 3.14;
+      var r = 10; // Ini adalah nilai jari-jari default, Anda bisa menggantinya jika perlu.
+      // var jar_jari = document.getElementById("jari, luas").value; // Ini sebaiknya dihapus karena tidak digunakan.
+      
+      //jawaban Nomor 3 (Anda harus mengambil nilai jari-jari dari input)
+      // var luas = phi * jari_Jari * jari_Jari; // Variabel jari_Jari tidak didefinisikan sebelumnya.
+
+      function hitungKeliling() {
+        var r = parseFloat(document.getElementById("jari").value);
+        var keliling = 2 * phi * r;
+        document.getElementById("hasil").innerHTML = keliling;
+      }
+
+      function hitungLuas() {
+        var r = parseFloat(document.getElementById("luas").value);
+        var luas = phi * r * r;
+        document.getElementById("hasilluas").innerHTML = luas;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Aritmatika</title>
+</head>
+<body>
+    <h1>Belajar Aritmatika</h1>
+    <div id="penjumlahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="modulus"></div>
+    
+    <script>
+        var bilangan1 = 6;
+        var bilangan12 = 2;
+
+        var penjumlahan = bilangan1 + bilangan12;
+        var pengurangan = bilangan1 - bilangan12;
+        var perkalian = bilangan1 * bilangan12;
+        var pembagian = bilangan1 / bilangan12;
+        var modulus = bilangan1 % bilangan12;
+        
+        document.getElementById("penjumlahan").innerHTML = "penjumlahan : " + bilangan1 + " + " + bilangan12 + " = " + penjumlahan;
+        document.getElementById("pengurangan").innerHTML = "pengurangan : " + bilangan1 + " - " + bilangan12 + " = " + pengurangan;
+        document.getElementById("perkalian").innerHTML = "perkalian : " + bilangan1 + " x " + bilangan12 + " = " + perkalian;
+        document.getElementById("pembagian").innerHTML = "pembagian : " + bilangan1 + " / " + bilangan12 + " = " + pembagian;
+        document.getElementById("modulus").innerHTML = "modulus : " + bilangan1 + " % " + bilangan12 + " = " + modulus;
+    </script>
+</body>
+</html>

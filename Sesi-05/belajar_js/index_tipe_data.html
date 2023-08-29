@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tipe Data di Javascript</title>
+</head>
+<body>
+    <h1> Belajar Tipe Data di Javascript</h1>
+
+    <div id="hasil"></div>
+
+    <script>
+        var angka = 10; // tipe data number
+        var kata = kata;// tipe data string
+        var kata_satu = 'A'; // tipe data string
+        var benar = true;
+        var salah = false;
+
+        var orang = {
+            nama:"Dimas",
+            umur: 24,
+            pekerjaan : "Programmer"
+        }
+            
+        
+
+        var buah = ["Apel", "Jeruk", "Mangga"];
+
+        var hasil = document.getElementById("hasil");
+        hasil.innerHTML = "Angka : " + angka + "<br />" +
+                          "Kata : " + kata + "<br />" +
+                          "Kata satu: " + kata_satu + "<br />" +
+                          "Benar : " + benar + "<br />" +
+                          "Salah : " + salah + "<br />" +
+                          "Orang : " + orang + "<br />" +
+                          "Buah  : " + buah[0] + "<br />" +
+                          "Buah  : " + buah[1] + "<br />" +
+                          "Buah  : " + buah[2] + "<br />" ;
+
+        // call data orang
+        hasil.innerHTML += "<br/>" +
+                           "Nama : " + orang.nama + "<br/> " +
+                           "Umur : " + orang.umur + "<br/> " +
+                           "Pekerjaan : " + orang.pekerjaan + "<br/> " ;
+        
+        // call data bush 
+        hasil.innerHTML += "<br/>" +
+                           "Buah : " + buah[0] + "<br/> " +
+                           "Buah : " + buah[1] + "<br/> " +
+                           "Buah : " + buah[2] + "<br/> " ;
+        // enter line 
+        hasil.innerHTML += "<br/>";
+
+        //gunakan looping untuk memanggil array
+        for ( var i = 0; i < buah.length; i++)
+        {
+            hasil.innerHTML += "<div style = 'backgroung-color : beige; padding; 5px; margin: 1px; color: dark; border-radius: 10px' > "
+            + buah[1] + "</div>";
+        }
+                          
+        
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <label>Pesan</label><input id="pesan" type="text"><br>
+    <label>Berapa banyak yang ingin anda cetak</label><input id="banyak" type="number"><br>
+    <button onClick="banyakCetak()"> CETAK!!!</button>
+   
+    <ol id="hasil"></ol>
+
+    <script>
+        // const nama_variabel= document.getElementById("nama_variabel")
+        
+        function banyakCetak()
+        {
+            let pesan = document.getElementById("pesan").value;
+            let banyak = document.getElementById("banyak").value;
+            let hasil = "";
+            
+            for (let i = 0; i < banyak; i++) {
+                hasil += "<li>" + pesan + "<br>";
+            }
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+
+       
+    </script>
+</body>
+</html>

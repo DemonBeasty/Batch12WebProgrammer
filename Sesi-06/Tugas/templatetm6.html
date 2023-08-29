@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+</head>
+
+<body>
+
+    <p id="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+        
+    <p id="paragraf2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+        
+    <p id="paragraf3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+    <script>
+
+        var paragraf1 = document.getElementById("paragraf1");
+        var paragraf2 = document.getElementById("paragraf2");
+        var paragraf3 = document.getElementById("paragraf3");
+        var warna1 = ["red", "black"];
+        var warna2 = ["green", "black"];
+        var warna3 = ["blue", "black"];
+        var i = 0;
+
+        setInterval(function()
+        {
+            if (i == 0) {
+                paragraf1.style.color = warna1[i];
+                paragraf2.style.color = warna2[i];
+                paragraf3.style.color = warna3[i];
+            } else {
+                paragraf1.style.color = warna1[1];
+                paragraf2.style.color = warna2[1];
+                paragraf3.style.color = warna3[1];
+            }
+            
+            i++;
+
+            if(i == warna1.length){
+                i = 0;
+            }
+        }, 1000);
+
+
+    </script>
+
+</body>
+
+</html>

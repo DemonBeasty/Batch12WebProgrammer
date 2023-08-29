@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Dom</title>
+</head>
+<body>
+    <h1>belajar dom</h1>
+    <p id="hasil"> </p>
+    <script>
+
+        //sebelum menggunakan console (menjalaankan di borwser)
+        document.write("Hello World");
+        document.write("<h2> Saya Sedang belajar DOM </h2>");
+
+        // jika di jalankan di console browser
+        // maka akan replace halaman dengan data baru
+        //jalankan scriptnya di browser
+     
+        document.write("<h2> Saya menjalankan JacaScript do Console Browser</h2>");
+        //jalankan di console browser dengan inspect element 
+        // jika didalam inspect tidak menggunakan variabel var
+        // jika ditulis di dalam document html menggunakan var 
+        
+        // contoh ketika ditulis didalam document html
+
+        var head = document.head;
+        console.log(head);
+        var body = document.body;  
+        console.log(body);
+        var title = document.title;
+        console.log(title);
+        var titleLength = document.title.length;
+        console.log(titleLength);
+
+        // contoh ketika ditulis di dalam console browser
+
+        document.head;
+        document.body;
+        document.title;
+        document.title.length;
+
+        //jika dijalankan dari html (open file ) maka akan terlihat di inspect element
+
+        // get element
+        var element = document.getElementById("hasil");
+        console.log(element);
+
+        // asign value
+        // element.innerHTML = "Hello World";
+        var paragraf = document.getElementsByTagName("p");
+
+        //buat element dengan DOM API ***
+
+        var paragraf = document.createElement("p");
+            paragraf.textContent = "Hello JavaScript menggunakan DOM";
+
+        paragraf [0].innerHTML ="hr>"; 
+
+        
+        var heading = document.createElement("h2");
+            heading.textContent = "Belajar DOM Menggunakan heading 2";
+
+        //tambah data 
+        document.body.appendChild(paragraf);
+        document.body.appendChild(heading);
+
+        //get paragraf
+        paragraf[1].innerHTML += "<hr>";
+    </script>
+</body>
+</html>

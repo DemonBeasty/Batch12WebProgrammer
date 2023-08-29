@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Regex</title>
+</head>
+<body>
+    <h1>Belajar Regex</h1>
+
+    <script>
+        //step1
+        //dibuka dengan / ditutup dengan/
+        var foo = /ab+c/;
+
+        console.log(foo);
+        console.log(typeof foo);
+
+        //step2 
+        //menggunakan contstructor
+        var foo = new RegExp("ab+c");
+
+        console.log(foo);
+        console.log(typeof foo);
+
+        var foo = "Belajar JavaScript";
+        var pola = /JavaScript/i;
+
+        console.log(pola.test(foo)); //cek apakah ada lata JavaScript di dalam foo
+        console.log(pola.exec(foo)); // mencari kata JavaScript di dalam foo
+        console.log(/Belajar/.test(foo));// cek apakah ada kata belajar di dalam foo
+        console.log(/Belajar/.exec(foo)); // mencari kata belajar di dalam foo
+
+
+        // jika tidak sesau saat dicari
+        console.log(/belajar/.test(foo));
+
+        var foo = " 1 jam sama dengan 60 menit, juga sama dengan 3600 detik,totalnya dengan 24 jam";
+
+        // jika ingin mencari semua angka
+        var pola =/\d+/g; // \d artinya mencari angka 1 atau lebih
+
+        //cari
+        console.log(pola.exec(foo)); // mencari angka pertama
+        console.log(pola.exec(foo)); // mencari angka kedua 
+        console.log(pola.exec(foo)); // mencari angka ketiga
+        console.log(pola.exec(foo)); // mencari angka keempat
+
+        var foo = "Belajar JavaScript";
+
+        console.log(/JavaScript/.test(foo));
+        console.log(/JavaScript/.test(foo));
+        console.log(/Belajar/.test(foo));
+        console.log(/Belajar/.test(foo));
+        console.log(/ajar/.test(foo));
+
+        console.log("------ Batas ------");
+
+        var pola =/[abcde]../; // mencari huruf a,b,c,d,e dan diikuti 2 karakter apapun
+
+        //cara singkat
+        // var pola = /[a-e].../; // mencari huruf a,b,c,d,e dan diikuti 2 karakter apapun
+        // menggunakan range a-e 
+
+        console.log(pola.test("abaa"));
+        console.log(pola.test("fba"));
+        console.log(pola.test("ldd"));
+        console.log(pola.test("add"));
+        console.log(pola.test(" dd"));
+        console.log(pola.test("belajar"));
+    </script>
+    
+</body>
+</html>
